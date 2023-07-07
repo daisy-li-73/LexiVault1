@@ -1,4 +1,4 @@
-## NOTE: resulting transliteration not as good as phonemizer... contains some extraneous symbols; also doc mention Arabic should be used with caution
+## NOTE: resulting transliteration not as good as phonemizer... contains some extraneous symbols; also doc mention Arabic should be approahced with caution
 import epitran
 import sys
 
