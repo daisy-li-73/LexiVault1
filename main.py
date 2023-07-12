@@ -33,7 +33,7 @@ def main():
 
     # Transcribe to words and lemmas IPA, delimit transcriptions, and write to output files
         transcripts = transcribe(lines, language)
-        writeTrans(lines, transFile, delimFile, transcripts, digraphs)
+        writeTrans(lines, transFile, delimFile, transcripts, digraphs, language)
 
      # Close input file
         file.close()
@@ -67,7 +67,7 @@ def transcribe(lines, language):
 
     return [words_trans, lemmas_trans]
 
-def writeTrans(lines, transFile, delimFile, transcripts, digraphs):
+def writeTrans(lines, transFile, delimFile, transcripts, digraphs, language):
     words_trans = transcripts[0]
     lemmas_trans = transcripts[1]
 
@@ -76,8 +76,13 @@ def writeTrans(lines, transFile, delimFile, transcripts, digraphs):
     # Write word and lemma transcripts to new filew
         line = lines[i]
         tokens = line.split("\t")
-        transFile.write(tokens[0]+"\t") # write word (or "word" header) to _trans file
-        delimFile.write(tokens[0]+"\t") # write word (or "word" header) to _delim file
+
+        if language == "en-us":
+            transFile.write(tokens[0]+"\t") # write word (or "word" header) to _trans file
+            delimFile.write(tokens[0]+"\t") # write word (or "word" header) to _delim file
+        elif language == "ar":
+            transFile.write(tokens[0]+"\t"+tokens[1]+"\t") # write Buckwalter + Arabic to _trans file
+            delimFile.write(tokens[0]+"\t"+tokens[1]+"\t") # write Buckwalter + Arabic to _delim file
 
         if (i == 0): # Write "transcription" header
             transFile.write("transcription\t")
@@ -91,8 +96,12 @@ def writeTrans(lines, transFile, delimFile, transcripts, digraphs):
             delimFile.write(delimTrans+"\t")
 
         # Write "lemma" column to _trans and _delim file 
-        transFile.write(tokens[1]+"\t") 
-        delimFile.write(tokens[1]+"\t")
+        if language == "en-us":
+            transFile.write(tokens[1]+"\t") 
+            delimFile.write(tokens[1]+"\t")
+        elif language == "ar":
+            transFile.write(tokens[2]+"\t"+tokens[3]+"\t") 
+            delimFile.write(tokens[2]+"\t"+tokens[3]+"\t") 
 
         if (i == 0): # Write "lem_trans" header to _trans and _delim file
             transFile.write("lem_trans"+"\t")
