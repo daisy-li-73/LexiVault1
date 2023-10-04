@@ -1,0 +1,45 @@
+language: python
+python:
+  - "3.4"
+  - "3.5"
+branches:
+  only:
+    - master
+    - develop
+notifications:
+  email: false
+
+sudo: required
+
+before_install:
+  - sudo add-apt-repository --yes ppa:beineri/opt-qt542
+  - sudo apt-get update -qq
+  - sudo apt-get install qt54base
+  - source /opt/qt54/bin/qt54-env.sh
+  - bash continuous-integration/travis/install.sh
+
+install:
+  - export PATH="$HOME/cachedir/miniconda/bin:$PATH"
+  - source activate test-environment
+  - which python
+  - conda list
+  - python setup.py install
+
+before_script:
+  - ls $HOME
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - sleep 3
+
+# Run test
+script:
+  - py.test -v --cov corpustools tests/
+
+# Calculate coverage
+after_success:
+  - coveralls
+
+cache:
+  directories:
+    - $HOME/cachedir
+  apt: true
