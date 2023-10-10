@@ -4,6 +4,7 @@ import os
 from corpustools.phonoprob.phonotactic_probability import phonotactic_probability_vitevitch
 from corpustools.contextmanagers import CanonicalVariantContext, MostFrequentVariantContext, WeightedVariantContext
 from corpustools.corpus.io.binary import load_binary, save_binary
+from corpustools.transprob.transitional_probability import calc_trans_prob
 
 # Loading a corpus from a text file
 from corpustools.corpus.io import (load_corpus_csv, load_feature_matrix_csv)
@@ -29,4 +30,16 @@ with open(phon_prob_out, "w", encoding="utf-8") as file:
     phon_prob = phonotactic_probability_vitevitch(c, corpus.find(spelling), 'bigram')
     line = "phon_prob of " + spelling + " = " + str(phon_prob) + "\n"
     file.write(line)
+
+# Transitional Probability
+bigram = ('t', 'ɑ')
+word_boundaries = 'Ignored'
+direction = 'forward'
+
+trans_prob_out = "api-test/trans_prob_out.txt"
+with open(trans_prob_out, "w", encoding="utf-8") as file:
+  res = calc_trans_prob(c, bigram, word_boundaries, direction)
+  line = "trans prob of " + str(bigram) + " = " + str(res) + "\n"
+  file.write(line)
+
 # print(list(map(str,corpus.attributes)))
