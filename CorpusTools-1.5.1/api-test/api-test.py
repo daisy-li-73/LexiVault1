@@ -20,10 +20,13 @@ corpus = load_corpus_csv('example_corpus', corpus_txt_path,'\t', None, features_
 # Context manager?
 c = CanonicalVariantContext(corpus, 'transcription', 'token')
 
-# Get spellings from corpus
+# Get spellings from corpus and write to output file
 wordlist = corpus.wordlist
-for w in wordlist.values():
-  spelling = w.spelling
-  phon_prob = phonotactic_probability_vitevitch(c, corpus.find(spelling), 'bigram')
-  print("phon_prob of ", spelling, " = ", phon_prob)
+phon_prob_out = "api-test/phon_prob_out.txt"
+with open(phon_prob_out, "w", encoding="utf-8") as file:
+  for w in wordlist.values():
+    spelling = w.spelling
+    phon_prob = phonotactic_probability_vitevitch(c, corpus.find(spelling), 'bigram')
+    line = "phon_prob of " + spelling + " = " + str(phon_prob) + "\n"
+    file.write(line)
 # print(list(map(str,corpus.attributes)))
