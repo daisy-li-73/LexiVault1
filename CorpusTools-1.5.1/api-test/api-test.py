@@ -9,8 +9,8 @@ from corpustools.corpus.io.binary import load_binary, save_binary
 from corpustools.corpus.io import (load_corpus_csv, load_feature_matrix_csv)
 
 corpus_txt_path = 'api-test/example_corpus.csv'
-features_matrix_txt_path = 'api-test/example_features_matrix.csv'
-features_matrix_path = 'api-test/example_features_matrix.features'
+features_matrix_txt_path = 'api-test/example_feature_matrix.csv'
+features_matrix_path = 'api-test/example_feature_matrix.features'
 
 features_matrix = load_feature_matrix_csv('example_features', features_matrix_txt_path, ',')
 save_binary(features_matrix, features_matrix_path)
