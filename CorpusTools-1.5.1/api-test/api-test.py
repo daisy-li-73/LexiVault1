@@ -32,14 +32,29 @@ with open(phon_prob_out, "w", encoding="utf-8") as file:
     file.write(line)
 
 # Transitional Probability
-bigram = ('t', 'ɑ')
-word_boundaries = 'Ignored'
+bigrams = [('t', 'ɑ'), ('o', 'm'), ('s', 'ɑ'), ('s', 'i')]
 direction = 'forward'
 
 trans_prob_out = "api-test/trans_prob_out.txt"
 with open(trans_prob_out, "w", encoding="utf-8") as file:
-  res = calc_trans_prob(c, bigram, word_boundaries, direction)
-  line = "trans prob of " + str(bigram) + " = " + str(res) + "\n"
-  file.write(line)
+  for b in bigrams:
+    res_ignored_forward = calc_trans_prob(c, b, 'Ignored', 'forward')
+    line = "forward ignored trans prob of " + str(b) + " = " + str(res_ignored_forward) + "\n"
+    file.write(line)
+    res_ignored_backward = calc_trans_prob(c, b, 'Ignored', 'backward')
+    line = "backward ignored trans prob of " + str(b) + " = " + str(res_ignored_backward) + "\n"
+    file.write(line)
+    res_halved_forward = calc_trans_prob(c, b, 'Halved', 'forward')
+    line = "forward halved trans prob of " + str(b) + " = " + str(res_halved_forward) + "\n"
+    file.write(line)
+    res_halved_backward = calc_trans_prob(c, b, 'Halved', 'backward')
+    line = "backward halved trans prob of " + str(b) + " = " + str(res_halved_backward) + "\n"
+    file.write(line)
+    res_both_forward = calc_trans_prob(c, b, 'Both sides', 'forward')
+    line = "forward both sides trans prob of " + str(b) + " = " + str(res_both_forward) + "\n"
+    file.write(line)
+    res_both_backward = calc_trans_prob(c, b, 'Both sides', 'backward')
+    line = "backward both sides trans prob of " + str(b) + " = " + str(res_both_backward) + "\n"
+    file.write(line)
 
 # print(list(map(str,corpus.attributes)))
