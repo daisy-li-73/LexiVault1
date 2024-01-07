@@ -1,0 +1,15 @@
+phon_prob of ta = 0.15077803323116565
+phon_prob of ʃi = 0.04392381998386945
+phon_prob of tusa = 0.10289106095324689
+phon_prob of nata = 0.049482120400020806
+phon_prob of mata = 0.06263356220067474
+phon_prob of shashi = 0.1155368156930479
+phon_prob of sasi = 0.1319692967042304
+phon_prob of shisata = 0.0676276722829388
+phon_prob of shushoma = 0.24442895474385845
+phon_prob of tishenishu = 0.3445325385733775
+phon_prob of mashomisi = 0.22930824213538945
+phon_prob of tatomi = 0.1991920436233876
+phon_prob of toni = 0.09351182113044387
+phon_prob of atema = 0.07989929418201869
+phon_prob of enuta = 0.07989929418201869

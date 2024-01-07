@@ -1056,7 +1056,6 @@ class Word(object):
             if isinstance(value, Decimal):
                 value = float(value)
             if isinstance(value, tuple):
-                print("key = ", key)
                 # this block of code is used when loading a corpus for the first time
                 att, value = value
                 if att.att_type == 'numeric':
@@ -1077,10 +1076,6 @@ class Word(object):
                     pass
 
                 setattr(self, key, value)
-                print("key = ", key)
-                print("value = ", value)
-                print("value is of type ", type(value))
-                print("attribute type = ", att.att_type)
 
                 if att.is_default:
                     if att.att_type == 'tier':
@@ -2186,7 +2181,7 @@ class Attribute(object):
         is None.
     """
     ATT_TYPES = ['spelling', 'tier', 'numeric', 'factor']
-    def __init__(self, name, att_type, display_name = None, default_value = None, is_default =  True):
+    def __init__(self, name, att_type, display_name = None, default_value = None, is_default = True):
         self.name = name
         self.att_type = att_type
         self._display_name = display_name
@@ -3253,7 +3248,6 @@ class Corpus(object):
                         if word.frequency == 0:
                             word.frequency += 1
                         self.wordlist[key] = word
-                        print(self.wordlist)
                         break
             else:
                 check.frequency += word.frequency if word.frequency != 0 else 1
