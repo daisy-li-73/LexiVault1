@@ -31,7 +31,7 @@ def main():
         user_input = input("Enter a list of IPA digraphs in your target language, separated by spaces: ")
         digraphs = user_input.split()
 
-    # Transcribe to words and lemmas IPA, delimit transcriptions, and write to output files
+    # Transcribe words and lemmas to IPA, delimit transcriptions, and write to output files
         transcripts = transcribe(lines, language)
         writeTrans(lines, transFile, delimFile, transcripts, digraphs, language)
 
