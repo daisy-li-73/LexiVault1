@@ -1,0 +1,2 @@
+﻿Corpus	PCT ver.	Analysis name	First segment	Second segment	Algorithm	Distinguished homophones	Minimal pair type	Count	Transcription tier	Frequency type	Pronunciation variants	Minimum word frequency	Environments	Result
+example_corpus	1.5.1	Functional load	m	n	Minimal pairs	False	True minimal pairs	Raw frequency	Transcription	Type	Canonical Form	0.0	None	1.0

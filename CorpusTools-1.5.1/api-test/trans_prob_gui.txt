@@ -1,0 +1,25 @@
+﻿Corpus	PCT ver.	Analysis name	Bigram	Word boundary	Direction	Sequence type	Tier	Pronunciation variants	Minimum word frequency	Transitional probability
+example_corpus	1.5.1	Transitional probability	tɑ	Word-end only	Backward	type	Transcription	Canonical form	0.0	0.39999999999999997
+example_corpus	1.5.1	Transitional probability	om	Word-end only	Backward	type	Transcription	Canonical form	0.0	0.75
+example_corpus	1.5.1	Transitional probability	sɑ	Word-end only	Backward	type	Transcription	Canonical form	0.0	0.19999999999999998
+example_corpus	1.5.1	Transitional probability	si	Word-end only	Backward	type	Transcription	Canonical form	0.0	0.19999999999999998
+example_corpus	1.5.1	Transitional probability	tɑ	Word-end only	Forward	type	Transcription	Canonical form	0.0	0.07228915662650602
+example_corpus	1.5.1	Transitional probability	om	Word-end only	Forward	type	Transcription	Canonical form	0.0	0.75
+example_corpus	1.5.1	Transitional probability	sɑ	Word-end only	Forward	type	Transcription	Canonical form	0.0	0.6
+example_corpus	1.5.1	Transitional probability	si	Word-end only	Forward	type	Transcription	Canonical form	0.0	0.39999999999999997
+example_corpus	1.5.1	Transitional probability	tɑ	Both sides	Backward	type	Transcription	Canonical form	0.0	0.375
+example_corpus	1.5.1	Transitional probability	om	Both sides	Backward	type	Transcription	Canonical form	0.0	0.5
+example_corpus	1.5.1	Transitional probability	sɑ	Both sides	Backward	type	Transcription	Canonical form	0.0	0.1875
+example_corpus	1.5.1	Transitional probability	si	Both sides	Backward	type	Transcription	Canonical form	0.0	0.2
+example_corpus	1.5.1	Transitional probability	tɑ	Both sides	Forward	type	Transcription	Canonical form	0.0	0.061224489795918366
+example_corpus	1.5.1	Transitional probability	om	Both sides	Forward	type	Transcription	Canonical form	0.0	0.75
+example_corpus	1.5.1	Transitional probability	sɑ	Both sides	Forward	type	Transcription	Canonical form	0.0	0.6
+example_corpus	1.5.1	Transitional probability	si	Both sides	Forward	type	Transcription	Canonical form	0.0	0.4
+example_corpus	1.5.1	Transitional probability	tɑ	Ignored	Backward	type	Transcription	Canonical form	0.0	0.4
+example_corpus	1.5.1	Transitional probability	om	Ignored	Backward	type	Transcription	Canonical form	0.0	0.75
+example_corpus	1.5.1	Transitional probability	sɑ	Ignored	Backward	type	Transcription	Canonical form	0.0	0.2
+example_corpus	1.5.1	Transitional probability	si	Ignored	Backward	type	Transcription	Canonical form	0.0	0.2
+example_corpus	1.5.1	Transitional probability	tɑ	Ignored	Forward	type	Transcription	Canonical form	0.0	0.08823529411764706
+example_corpus	1.5.1	Transitional probability	om	Ignored	Forward	type	Transcription	Canonical form	0.0	0.75
+example_corpus	1.5.1	Transitional probability	sɑ	Ignored	Forward	type	Transcription	Canonical form	0.0	0.6
+example_corpus	1.5.1	Transitional probability	si	Ignored	Forward	type	Transcription	Canonical form	0.0	0.4
