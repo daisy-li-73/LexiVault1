@@ -1,3 +1,9 @@
+Canonical variant
 target segment = m
 fl_results = 0.007407407407407407
-minpairs = {('m', 'o'): set(), ('m', 'u'): set(), ('m', 'ʃ'): set(), ('m', 'ɑ'): set(), ('m', 'i'): set(), ('m', 't'): set(), ('m', 'e'): set(), ('m', 'n'): {(('mata', m.ɑ.t.ɑ, 2.0), ('nata', n.ɑ.t.ɑ, 2.0))}, ('m', 's'): set()}
+minpairs = {('m', 'n'): {(('mata', m.ɑ.t.ɑ, 1), ('nata', n.ɑ.t.ɑ, 1))}, ('m', 'e'): set(), ('m', 's'): set(), ('m', 't'): set(), ('m', 'ɑ'): set(), ('m', 'i'): set(), ('m', 'o'): set(), ('m', 'ʃ'): set(), ('m', 'u'): set()}
+
+Most frequent variant
+target segment = m
+fl_results = 0.007407407407407407
+minpairs = {('m', 'n'): {(('mata', m.ɑ.t.ɑ, 1), ('nata', n.ɑ.t.ɑ, 1))}, ('m', 'e'): set(), ('m', 's'): set(), ('m', 't'): set(), ('m', 'ɑ'): set(), ('m', 'i'): set(), ('m', 'o'): set(), ('m', 'ʃ'): set(), ('m', 'u'): set()}

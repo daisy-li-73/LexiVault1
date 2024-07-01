@@ -23,6 +23,7 @@ forward halved trans prob of ('s', 'i') = 0.4
 backward halved trans prob of ('s', 'i') = 0.2
 forward both sides trans prob of ('s', 'i') = 0.4
 backward both sides trans prob of ('s', 'i') = 0.2
+
 Most frequent variant
 forward ignored trans prob of ('t', 'ɑ') = 0.08823529411764706
 backward ignored trans prob of ('t', 'ɑ') = 0.4
