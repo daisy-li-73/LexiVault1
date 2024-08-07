@@ -1,0 +1,8 @@
+word	word_ar	lemma	lemma_ar	pos	stem	gloss	root	root_ar	pattern	pattern_ar	freq_word	freq_lem	freq_root	freq_ptrn
+AlEalama	العَلَمَ	Ealam	عَلَم	noun	Ealam	flag;banner;badge	E.l.m	ع.ل.م	faEal	فَعَل	4.178	28.534	3446.101	10758.715
+AlEalami	العَلَمِ	Ealam	عَلَم	noun	Ealam	flag;banner;badge	E.l.m	ع.ل.م	faEal	فَعَل	7.684	28.534	3446.101	10758.715
+AlEAlami	العالَمِ	EAlam	عالَم	noun	EAlam	world	E.l.m	ع.ل.م	fAEal	فاعَل	843.912	1157.531	3446.101	3746.815
+EAlamiy~apK	عالَمِيَّةٍ	EAlamiy~	عالَمِيّ	adj	EAlamiy~	international;world-wide;world	E.l.m	ع.ل.م	fAEaliy~	فاعَلِيّ	30.27	655.687	3446.101	655.687
+AlEAlamu	العالَمُ	EAlam	عالَم	noun	EAlam	world	E.l.m	ع.ل.م	fAEal	فاعَل	57.68	1157.531	3446.101	3746.815
+EAlami	عالَمِ	EAlam	عالَم	noun	EAlam	world	E.l.m	ع.ل.م	fAEal	فاعَل	44.271	1157.531	3446.101	3746.815
+waAlEAlami	وَالعالَمِ	EAlam	عالَم	noun	EAlam	world	E.l.m	ع.ل.م	fAEal	فاعَل	36.384	1157.531	3446.101	3746.815
