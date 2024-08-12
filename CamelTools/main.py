@@ -8,6 +8,7 @@ from camel_tools.tokenizers.word import simple_word_tokenize
 from camel_tools.utils.normalize import normalize_unicode
 from camel_tools.utils.charmap import CharMapper
 from camel_tools.disambig.mle import MLEDisambiguator
+import sys
 
 # Initialize the components
 ar2bw = CharMapper.builtin_mapper('ar2bw')
@@ -78,9 +79,12 @@ def read_file(file_path):
 
 # Main function
 def main():
-    # Specify the path to your input file
-    file_path = 'input/lorem-ipsum.txt'
-    output_path = 'output/lorem-ipsum.out'
+    args = sys.argv[1:]
+    if len(args) != 1:
+        print("Usage: python main.py <input_file>")
+        sys.exit(1)
+    file_path = args[0]
+    output_path = file_path + '.out'
 
     # Read the text from the file
     corpus = read_file(file_path)
