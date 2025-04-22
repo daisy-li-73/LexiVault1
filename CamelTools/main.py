@@ -10,6 +10,7 @@ from camel_tools.utils.charmap import CharMapper
 from camel_tools.disambig.mle import MLEDisambiguator
 from camel_tools.disambig.bert import BERTUnfactoredDisambiguator
 import sys
+import time
 
 # Initialize the components
 ar2bw = CharMapper.builtin_mapper('ar2bw')
@@ -174,4 +175,7 @@ def main():
                 bert_file.write(f"{result['bert_root']}\n")                   
                                     
 if __name__ == "__main__":
+    start = time.perf_counter()
     main()
+    end = time.perf_counter()
+    print(f"Elapsed time: {end - start:.4f} seconds")
