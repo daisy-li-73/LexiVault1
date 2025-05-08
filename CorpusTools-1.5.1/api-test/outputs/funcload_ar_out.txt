@@ -1,0 +1,8 @@
+Canonical variant
+target segment = i
+fl_results = 0.037037037037037035
+minpairs = {('i', 'l'): set(), ('i', 'm'): set(), ('i', 'ʔ'): set(), ('i', 't'): set(), ('i', 'w'): set(), ('i', 'n'): set(), ('i', 'u'): {(('AlEAlami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEAlamu', ʔ.a.l.ʕ.a.l.a.m.u, 1)), (('AlEalami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEAlamu', ʔ.a.l.ʕ.a.l.a.m.u, 1))}, ('i', 'ʕ'): set(), ('i', 'a'): {(('AlEAlami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEalama', ʔ.a.l.ʕ.a.l.a.m.a, 1)), (('AlEalami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEalama', ʔ.a.l.ʕ.a.l.a.m.a, 1))}}
+Most frequent variant
+target segment = i
+fl_results = 0.037037037037037035
+minpairs = {('i', 'l'): set(), ('i', 'm'): set(), ('i', 'ʔ'): set(), ('i', 't'): set(), ('i', 'w'): set(), ('i', 'n'): set(), ('i', 'u'): {(('AlEAlami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEAlamu', ʔ.a.l.ʕ.a.l.a.m.u, 1)), (('AlEalami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEAlamu', ʔ.a.l.ʕ.a.l.a.m.u, 1))}, ('i', 'ʕ'): set(), ('i', 'a'): {(('AlEAlami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEalama', ʔ.a.l.ʕ.a.l.a.m.a, 1)), (('AlEalami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEalama', ʔ.a.l.ʕ.a.l.a.m.a, 1))}}
