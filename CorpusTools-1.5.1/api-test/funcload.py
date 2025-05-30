@@ -20,7 +20,7 @@ input_csv = 'inputs/sample_ar.csv'
 output_csv = 'inputs/sample_ar_clean.csv'
 
 # Set the transcription column you want to keep
-main_trans_col = 'Root_trans'  # <-- change this if needed (case-sensitive match)
+main_trans_col = 'Transcription'  # <-- change this if needed (case-sensitive match)
 
 with open(input_csv, 'r', encoding='utf-8') as infile:
     reader = csv.DictReader(infile)
@@ -38,7 +38,7 @@ with open(input_csv, 'r', encoding='utf-8') as infile:
             clean_row = {k: v for k, v in row.items() if k in headers_to_keep}
             writer.writerow(clean_row)
 
-corpus_txt_path = 'inputs/sample_ar_clean.csv'
+corpus_txt_path = output_csv
 feature_matrix_txt_path = 'inputs/example_feature_matrix.csv'
 feature_matrix_path = 'inputs/example_feature_matrix.feature'
         
