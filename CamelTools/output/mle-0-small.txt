@@ -1,0 +1,6 @@
+word_bw	word_ar	lemma_bw	lemma_ar	pos	stem_bw	stem_ar	gloss	root_bw	root_ar
+Alw	الو	|l	آل	verb	|l	آل	arrive;lead;return_[ARAMORPH]+he;it_<verb>_it;him_[ARAMORPH]	None	None
+Alw	الو	|l	آل	verb	|l	آل	arrive;lead;return_[ARAMORPH]+he;it_<verb>_it;him_[ARAMORPH]	None	None
+Alw	الو	|l	آل	verb	|l	آل	arrive;lead;return_[ARAMORPH]+he;it_<verb>_it;him_[ARAMORPH]	None	None
+mHsn	محسن	Hasan	حَسَن	noun_prop	Hasan	حَسَن	from_[CALIMA]+Hassan_[CALIMA]	None	None
+hndAwY	هنداوى	dAwaY	داوَى	verb	dAwaY	داوَى	will_+_we_[ADAM]+be_treated;be_nursed_[ARAMORPH]	None	None

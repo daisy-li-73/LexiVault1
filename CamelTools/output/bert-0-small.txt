@@ -1,0 +1,6 @@
+word_bw	word_ar	lemma_bw	lemma_ar	pos	stem_bw	stem_ar	gloss	root_bw	root_ar
+Alw	الو	>aluw	أَلُو	interj	>aluw	أَلُو	hello_[CALIMA]	None	None
+Alw	الو	>aluw	أَلُو	interj	>aluw	أَلُو	hello_[CALIMA]	None	None
+Alw	الو	>aluw	أَلُو	interj	>aluw	أَلُو	hello_[CALIMA]	None	None
+mHsn	محسن	mHsn	محسن	noun_prop	mHsn	محسن	NO_ANALYSIS_[ARAMORPH]	None	None
+hndAwY	هنداوى	hinodAwiy~	هِنْداوِيّ	noun_prop	hinodAwiy~	هِنْداوِيّ	Hindawi_[ARAMORPH]	None	None
