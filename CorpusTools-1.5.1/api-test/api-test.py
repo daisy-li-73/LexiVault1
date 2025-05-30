@@ -1,6 +1,3 @@
-import sys
-import os
-
 from corpustools.phonoprob.phonotactic_probability import phonotactic_probability_vitevitch
 from corpustools.contextmanagers import (CanonicalVariantContext,
                                         MostFrequentVariantContext,

@@ -1,8 +1,65 @@
-Canonical variant
-target segment = i
-fl_results = 0.037037037037037035
-minpairs = {('i', 'l'): set(), ('i', 'm'): set(), ('i', 'ʔ'): set(), ('i', 't'): set(), ('i', 'w'): set(), ('i', 'n'): set(), ('i', 'u'): {(('AlEAlami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEAlamu', ʔ.a.l.ʕ.a.l.a.m.u, 1)), (('AlEalami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEAlamu', ʔ.a.l.ʕ.a.l.a.m.u, 1))}, ('i', 'ʕ'): set(), ('i', 'a'): {(('AlEAlami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEalama', ʔ.a.l.ʕ.a.l.a.m.a, 1)), (('AlEalami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEalama', ʔ.a.l.ʕ.a.l.a.m.a, 1))}}
-Most frequent variant
-target segment = i
-fl_results = 0.037037037037037035
-minpairs = {('i', 'l'): set(), ('i', 'm'): set(), ('i', 'ʔ'): set(), ('i', 't'): set(), ('i', 'w'): set(), ('i', 'n'): set(), ('i', 'u'): {(('AlEAlami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEAlamu', ʔ.a.l.ʕ.a.l.a.m.u, 1)), (('AlEalami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEAlamu', ʔ.a.l.ʕ.a.l.a.m.u, 1))}, ('i', 'ʕ'): set(), ('i', 'a'): {(('AlEAlami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEalama', ʔ.a.l.ʕ.a.l.a.m.a, 1)), (('AlEalami', ʔ.a.l.ʕ.a.l.a.m.i, 1), ('AlEalama', ʔ.a.l.ʕ.a.l.a.m.a, 1))}}
+CANONICAL VARIANT
+
+target segment = #
+fl_results = 0.0
+
+target segment = E
+fl_results = 0.16666666666666666
+('E', 'I'):
+  (('AlEAlami', E.l.m, 1), ('waAlEAlami', I.l.m, 1))
+  (('waAlEAlami', E.l.m, 1), ('waAlEAlami', I.l.m, 1))
+  (('AlEAlamu', E.l.m, 1), ('waAlEAlami', I.l.m, 1))
+  (('AlEalama', E.l.m, 1), ('waAlEAlami', I.l.m, 1))
+  (('AlEalami', E.l.m, 1), ('waAlEAlami', I.l.m, 1))
+  (('EAlamiy~apK', E.l.m, 1), ('waAlEAlami', I.l.m, 1))
+  (('EAlami', E.l.m, 1), ('waAlEAlami', I.l.m, 1))
+
+target segment = l
+fl_results = 0.0
+
+target segment = m
+fl_results = 0.0
+
+target segment = I
+fl_results = 0.16666666666666666
+('I', 'E'):
+  (('waAlEAlami', I.l.m, 1), ('EAlami', E.l.m, 1))
+  (('waAlEAlami', I.l.m, 1), ('AlEAlami', E.l.m, 1))
+  (('waAlEAlami', I.l.m, 1), ('EAlamiy~apK', E.l.m, 1))
+  (('waAlEAlami', I.l.m, 1), ('AlEalami', E.l.m, 1))
+  (('waAlEAlami', I.l.m, 1), ('AlEalama', E.l.m, 1))
+  (('waAlEAlami', I.l.m, 1), ('waAlEAlami', E.l.m, 1))
+  (('waAlEAlami', I.l.m, 1), ('AlEAlamu', E.l.m, 1))
+
+MOST FREQUENT VARIANT
+
+target segment = #
+fl_results = 0.0
+
+target segment = E
+fl_results = 0.16666666666666666
+('E', 'I'):
+  (('AlEAlami', E.l.m, 1), ('waAlEAlami', I.l.m, 1))
+  (('waAlEAlami', E.l.m, 1), ('waAlEAlami', I.l.m, 1))
+  (('AlEAlamu', E.l.m, 1), ('waAlEAlami', I.l.m, 1))
+  (('AlEalama', E.l.m, 1), ('waAlEAlami', I.l.m, 1))
+  (('AlEalami', E.l.m, 1), ('waAlEAlami', I.l.m, 1))
+  (('EAlamiy~apK', E.l.m, 1), ('waAlEAlami', I.l.m, 1))
+  (('EAlami', E.l.m, 1), ('waAlEAlami', I.l.m, 1))
+
+target segment = l
+fl_results = 0.0
+
+target segment = m
+fl_results = 0.0
+
+target segment = I
+fl_results = 0.16666666666666666
+('I', 'E'):
+  (('waAlEAlami', I.l.m, 1), ('EAlami', E.l.m, 1))
+  (('waAlEAlami', I.l.m, 1), ('AlEAlami', E.l.m, 1))
+  (('waAlEAlami', I.l.m, 1), ('EAlamiy~apK', E.l.m, 1))
+  (('waAlEAlami', I.l.m, 1), ('AlEalami', E.l.m, 1))
+  (('waAlEAlami', I.l.m, 1), ('AlEalama', E.l.m, 1))
+  (('waAlEAlami', I.l.m, 1), ('waAlEAlami', E.l.m, 1))
+  (('waAlEAlami', I.l.m, 1), ('AlEAlamu', E.l.m, 1))
